@@ -55,9 +55,9 @@ public class EnumFileIO {
         System.out.println("Welcome to the grade keeper");
         while (true) {
             System.out.println("Commands: \n 'display' = Will display all your grades \n 'input' = To input a new grade to your list \n 'exit' = To exit the program");
-
-            switch (sc.nextLine()) {
-                case "display":
+            String Command = sc.nextLine();
+            switch (Command) {
+                case "input":
                     System.out.println("Please enter a grade [A,B,C,D,R].");
                     try {
                         mark.add((Grades.valueOf(sc.next())));
@@ -67,14 +67,13 @@ public class EnumFileIO {
                         System.out.println("Not an actual grade");
                     }
                     break;
-                case "input":
+                case "display":
                     System.out.println("Here is your list\n");
                     mark.forEach((i) -> System.out.println(i.name()));
                     break;
                 case "exit":
                     System.exit(0);
                 default:
-                    System.out.println("Invalid, try again");
                     break;
             }
         }

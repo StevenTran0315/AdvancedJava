@@ -4,8 +4,10 @@
  * and open the template in the editor.
  */
 package javaadvanced;
+
 import java.io.IOException;
 import java.util.Scanner;
+
 /**
  *
  * @author S331461152
@@ -21,20 +23,20 @@ public class Execute {
         System.out.println("There is no error handling for only this class as it serves only as a directory to the actual"
                 + " files and is not being marked");
         Scanner sc = new Scanner(System.in);
-        switch(sc.nextInt()){
+        switch (sc.nextInt()) {
             case 1:
-                .run();
+                SearchFileIO.run();
                 break;
             case 2:
-                EnumSorting.Execute();
+                SortRecursion.run();
                 break;
             case 3:
                 EnumFileIO.Intialize();
                 break;
             case 4:
-                .run();
+                Bonus.run();
                 break;
         }
     }
-    
+
 }
