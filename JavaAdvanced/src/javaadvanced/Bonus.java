@@ -9,6 +9,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Collections;
 
 /**
  *
@@ -112,7 +113,11 @@ public class Bonus {
         if (temp.isEmpty()) {
             System.out.println("Everything is in the luggage.");
         } else {
+          
+            temp.sort(Collections.reverseOrder());
             System.out.printf(temp + " are missing. \n");
         }
     }
+
+  
 }
