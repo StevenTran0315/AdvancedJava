@@ -110,7 +110,7 @@ public class Bonus {
             length = list.size();
         }
         if (temp.isEmpty()) {
-            System.out.println("Everyone is here.");
+            System.out.println("Everything is in the luggage.");
         } else {
             System.out.printf(temp + " are missing. \n");
         }
